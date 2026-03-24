@@ -1,0 +1,3593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d037df3ce5f28abdb3826c8a0e6cb861 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d037df3ce5f28abdb3826c8a0e6cb861" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d037df3ce5f28abdb3826c8a0e6cb861 = L.map(
+                "map_d037df3ce5f28abdb3826c8a0e6cb861",
+                {
+                    center: [23.98, 121.55],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b95aea6dac991e73123429b23ca0e973 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b95aea6dac991e73123429b23ca0e973.addTo(map_d037df3ce5f28abdb3826c8a0e6cb861);
+        
+    
+            var feature_group_02c309818016e55cc4c240f399ef1ee9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e853b1e7ed349691a27b5a5ed87e9035 = L.circleMarker(
+                [23.975128, 121.613275],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_115068b1894bfa2605d522cd1f867d13 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aa8994d0ae99efe197f30e499595200d = $(`<div id="html_aa8994d0ae99efe197f30e499595200d" style="width: 100.0%; height: 100.0%;">     <b>花蓮</b><br>     County: 花蓮縣<br>     Town: 花蓮市<br>     1-hour rain: 1.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 12.0 mm     </div>`)[0];
+                popup_115068b1894bfa2605d522cd1f867d13.setContent(html_aa8994d0ae99efe197f30e499595200d);
+            
+        
+
+        circle_marker_e853b1e7ed349691a27b5a5ed87e9035.bindPopup(popup_115068b1894bfa2605d522cd1f867d13)
+        ;
+
+        
+    
+    
+            circle_marker_e853b1e7ed349691a27b5a5ed87e9035.bindTooltip(
+                `<div>
+                     花蓮 | 1hr: 1.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ab1a996ba1e5d583d3f5a2b7e2134b9 = L.circleMarker(
+                [24.143186, 121.284231],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_5e92792a8ebc52b37d42fe115a6ae673 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a5c47e7a96f0bd4564ab61d7d1db5b1d = $(`<div id="html_a5c47e7a96f0bd4564ab61d7d1db5b1d" style="width: 100.0%; height: 100.0%;">     <b>合歡山</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_5e92792a8ebc52b37d42fe115a6ae673.setContent(html_a5c47e7a96f0bd4564ab61d7d1db5b1d);
+            
+        
+
+        circle_marker_6ab1a996ba1e5d583d3f5a2b7e2134b9.bindPopup(popup_5e92792a8ebc52b37d42fe115a6ae673)
+        ;
+
+        
+    
+    
+            circle_marker_6ab1a996ba1e5d583d3f5a2b7e2134b9.bindTooltip(
+                `<div>
+                     合歡山 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3186725949aba491467820261c813e46 = L.circleMarker(
+                [24.192044, 121.388386],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_19d4e2ddc72d2b48392b7a34f86e46df = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_96d9369dfd8f428d4a57b7e8e19612d8 = $(`<div id="html_96d9369dfd8f428d4a57b7e8e19612d8" style="width: 100.0%; height: 100.0%;">     <b>慈恩</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_19d4e2ddc72d2b48392b7a34f86e46df.setContent(html_96d9369dfd8f428d4a57b7e8e19612d8);
+            
+        
+
+        circle_marker_3186725949aba491467820261c813e46.bindPopup(popup_19d4e2ddc72d2b48392b7a34f86e46df)
+        ;
+
+        
+    
+    
+            circle_marker_3186725949aba491467820261c813e46.bindTooltip(
+                `<div>
+                     慈恩 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17c859ceb15d5cc49d60d9bfc9886831 = L.circleMarker(
+                [24.204558, 121.453956],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_dc1607e433a4bc9f18670196ec9bad60 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0643060a5884f12c4452c92280ac0aa0 = $(`<div id="html_0643060a5884f12c4452c92280ac0aa0" style="width: 100.0%; height: 100.0%;">     <b>洛韶</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_dc1607e433a4bc9f18670196ec9bad60.setContent(html_0643060a5884f12c4452c92280ac0aa0);
+            
+        
+
+        circle_marker_17c859ceb15d5cc49d60d9bfc9886831.bindPopup(popup_dc1607e433a4bc9f18670196ec9bad60)
+        ;
+
+        
+    
+    
+            circle_marker_17c859ceb15d5cc49d60d9bfc9886831.bindTooltip(
+                `<div>
+                     洛韶 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b3aa035db7c71e28ffdd0081dddbc75 = L.circleMarker(
+                [24.023289, 121.411328],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_d9b24c2cd072e82522d4e4db29425c0a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d342a8a3a4abc3103ac98a6a47bd8220 = $(`<div id="html_d342a8a3a4abc3103ac98a6a47bd8220" style="width: 100.0%; height: 100.0%;">     <b>龍澗</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_d9b24c2cd072e82522d4e4db29425c0a.setContent(html_d342a8a3a4abc3103ac98a6a47bd8220);
+            
+        
+
+        circle_marker_6b3aa035db7c71e28ffdd0081dddbc75.bindPopup(popup_d9b24c2cd072e82522d4e4db29425c0a)
+        ;
+
+        
+    
+    
+            circle_marker_6b3aa035db7c71e28ffdd0081dddbc75.bindTooltip(
+                `<div>
+                     龍澗 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c20b114c05b03cdcd5e4e3a7954c6d8 = L.circleMarker(
+                [23.769503, 121.498653],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_394e4bd60a920bf65e74b21094c4edc4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c758b6497e032b4e3b940edb8d505249 = $(`<div id="html_c758b6497e032b4e3b940edb8d505249" style="width: 100.0%; height: 100.0%;">     <b>中興</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_394e4bd60a920bf65e74b21094c4edc4.setContent(html_c758b6497e032b4e3b940edb8d505249);
+            
+        
+
+        circle_marker_9c20b114c05b03cdcd5e4e3a7954c6d8.bindPopup(popup_394e4bd60a920bf65e74b21094c4edc4)
+        ;
+
+        
+    
+    
+            circle_marker_9c20b114c05b03cdcd5e4e3a7954c6d8.bindTooltip(
+                `<div>
+                     中興 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c0791738f24f5eabc87e1aed168319a = L.circleMarker(
+                [23.8119, 121.441458],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_51f894385b0e0c78e0c838c5688e77bf = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9deb865bf7eb318fa465cca5740e30d0 = $(`<div id="html_9deb865bf7eb318fa465cca5740e30d0" style="width: 100.0%; height: 100.0%;">     <b>西林</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_51f894385b0e0c78e0c838c5688e77bf.setContent(html_9deb865bf7eb318fa465cca5740e30d0);
+            
+        
+
+        circle_marker_5c0791738f24f5eabc87e1aed168319a.bindPopup(popup_51f894385b0e0c78e0c838c5688e77bf)
+        ;
+
+        
+    
+    
+            circle_marker_5c0791738f24f5eabc87e1aed168319a.bindTooltip(
+                `<div>
+                     西林 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe0a40a12d54b698ee585be8b3cc7905 = L.circleMarker(
+                [23.714206, 121.373133],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_faee2b3e1b16ee615032ce57020c82a4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b64ebbd60a55baf92a9fd283a18b9d49 = $(`<div id="html_b64ebbd60a55baf92a9fd283a18b9d49" style="width: 100.0%; height: 100.0%;">     <b>大觀</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.5 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_faee2b3e1b16ee615032ce57020c82a4.setContent(html_b64ebbd60a55baf92a9fd283a18b9d49);
+            
+        
+
+        circle_marker_fe0a40a12d54b698ee585be8b3cc7905.bindPopup(popup_faee2b3e1b16ee615032ce57020c82a4)
+        ;
+
+        
+    
+    
+            circle_marker_fe0a40a12d54b698ee585be8b3cc7905.bindTooltip(
+                `<div>
+                     大觀 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_451a263e5faa970d0a895dd64800fd4c = L.circleMarker(
+                [23.666719, 121.370128],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_2c500c7f7f8a9ab8af8ec2bf1d987997 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_be0fc15dfca53c7cb19d9b2397992b4e = $(`<div id="html_be0fc15dfca53c7cb19d9b2397992b4e" style="width: 100.0%; height: 100.0%;">     <b>太安</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_2c500c7f7f8a9ab8af8ec2bf1d987997.setContent(html_be0fc15dfca53c7cb19d9b2397992b4e);
+            
+        
+
+        circle_marker_451a263e5faa970d0a895dd64800fd4c.bindPopup(popup_2c500c7f7f8a9ab8af8ec2bf1d987997)
+        ;
+
+        
+    
+    
+            circle_marker_451a263e5faa970d0a895dd64800fd4c.bindTooltip(
+                `<div>
+                     太安 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e8937028e1a741287b9d97fe650691e = L.circleMarker(
+                [23.615233, 121.413331],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_f300647d4f31f62ec0791cf51a598d23 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_10fee1e6edb459858f463e20b1ccc41f = $(`<div id="html_10fee1e6edb459858f463e20b1ccc41f" style="width: 100.0%; height: 100.0%;">     <b>大農</b><br>     County: 花蓮縣<br>     Town: 光復鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_f300647d4f31f62ec0791cf51a598d23.setContent(html_10fee1e6edb459858f463e20b1ccc41f);
+            
+        
+
+        circle_marker_3e8937028e1a741287b9d97fe650691e.bindPopup(popup_f300647d4f31f62ec0791cf51a598d23)
+        ;
+
+        
+    
+    
+            circle_marker_3e8937028e1a741287b9d97fe650691e.bindTooltip(
+                `<div>
+                     大農 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a762d9079bd25e198ebfa55523b8e08 = L.circleMarker(
+                [24.171842, 121.571269],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_bb3d7f288cafdcc722b6626079c9550a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_acbecdcbdb65c434c1d3aed5229e918c = $(`<div id="html_acbecdcbdb65c434c1d3aed5229e918c" style="width: 100.0%; height: 100.0%;">     <b>布洛灣</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 1.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.5 mm     </div>`)[0];
+                popup_bb3d7f288cafdcc722b6626079c9550a.setContent(html_acbecdcbdb65c434c1d3aed5229e918c);
+            
+        
+
+        circle_marker_5a762d9079bd25e198ebfa55523b8e08.bindPopup(popup_bb3d7f288cafdcc722b6626079c9550a)
+        ;
+
+        
+    
+    
+            circle_marker_5a762d9079bd25e198ebfa55523b8e08.bindTooltip(
+                `<div>
+                     布洛灣 | 1hr: 1.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64083cb61239402b89d49379d8be4d28 = L.circleMarker(
+                [24.179597, 121.495639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_f823e19a6cb914f1731b92ce361d7e1a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f2c2f7fcfda857e0800e98d6895f7666 = $(`<div id="html_f2c2f7fcfda857e0800e98d6895f7666" style="width: 100.0%; height: 100.0%;">     <b>天祥</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_f823e19a6cb914f1731b92ce361d7e1a.setContent(html_f2c2f7fcfda857e0800e98d6895f7666);
+            
+        
+
+        circle_marker_64083cb61239402b89d49379d8be4d28.bindPopup(popup_f823e19a6cb914f1731b92ce361d7e1a)
+        ;
+
+        
+    
+    
+            circle_marker_64083cb61239402b89d49379d8be4d28.bindTooltip(
+                `<div>
+                     天祥 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56a7852cca8b9ac1033563854ad7f81f = L.circleMarker(
+                [23.935639, 121.508944],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_72450efd2a90537d5494aabd64911ff2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_afe08b728202e8361d8acb6ac31e9d07 = $(`<div id="html_afe08b728202e8361d8acb6ac31e9d07" style="width: 100.0%; height: 100.0%;">     <b>鯉魚潭</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_72450efd2a90537d5494aabd64911ff2.setContent(html_afe08b728202e8361d8acb6ac31e9d07);
+            
+        
+
+        circle_marker_56a7852cca8b9ac1033563854ad7f81f.bindPopup(popup_72450efd2a90537d5494aabd64911ff2)
+        ;
+
+        
+    
+    
+            circle_marker_56a7852cca8b9ac1033563854ad7f81f.bindTooltip(
+                `<div>
+                     鯉魚潭 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd87a9ad83e74501b31382ac85f45dcd = L.circleMarker(
+                [23.660694, 121.424964],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_751e7fabe0cecb20b3b963ccf81fab7a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5b770cc2bdf833b3f832631415c91a77 = $(`<div id="html_5b770cc2bdf833b3f832631415c91a77" style="width: 100.0%; height: 100.0%;">     <b>光復</b><br>     County: 花蓮縣<br>     Town: 光復鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_751e7fabe0cecb20b3b963ccf81fab7a.setContent(html_5b770cc2bdf833b3f832631415c91a77);
+            
+        
+
+        circle_marker_bd87a9ad83e74501b31382ac85f45dcd.bindPopup(popup_751e7fabe0cecb20b3b963ccf81fab7a)
+        ;
+
+        
+    
+    
+            circle_marker_bd87a9ad83e74501b31382ac85f45dcd.bindTooltip(
+                `<div>
+                     光復 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8255b07bfa85cded8b0a428553cb1083 = L.circleMarker(
+                [23.394239, 121.356808],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_c073a6077ffbc57b71b769b0bba394db = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_792a7fdd15d2032c3a4f6c3c6193298c = $(`<div id="html_792a7fdd15d2032c3a4f6c3c6193298c" style="width: 100.0%; height: 100.0%;">     <b>高寮</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_c073a6077ffbc57b71b769b0bba394db.setContent(html_792a7fdd15d2032c3a4f6c3c6193298c);
+            
+        
+
+        circle_marker_8255b07bfa85cded8b0a428553cb1083.bindPopup(popup_c073a6077ffbc57b71b769b0bba394db)
+        ;
+
+        
+    
+    
+            circle_marker_8255b07bfa85cded8b0a428553cb1083.bindTooltip(
+                `<div>
+                     高寮 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d77ccaf2c5c95e6f323ba59eff666e92 = L.circleMarker(
+                [23.208717, 121.262342],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_eacc023d9e9f80a4f2460cc662d07ed0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cd1b8853c07bc93347d86736d1c36913 = $(`<div id="html_cd1b8853c07bc93347d86736d1c36913" style="width: 100.0%; height: 100.0%;">     <b>明里</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_eacc023d9e9f80a4f2460cc662d07ed0.setContent(html_cd1b8853c07bc93347d86736d1c36913);
+            
+        
+
+        circle_marker_d77ccaf2c5c95e6f323ba59eff666e92.bindPopup(popup_eacc023d9e9f80a4f2460cc662d07ed0)
+        ;
+
+        
+    
+    
+            circle_marker_d77ccaf2c5c95e6f323ba59eff666e92.bindTooltip(
+                `<div>
+                     明里 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4f4f4d982eae526cc29044c09d332e5 = L.circleMarker(
+                [23.493119, 121.338806],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_6a818d652144d70daa2bc2885278fce2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c3f43f7d5510dd43b8148bafc83d64e3 = $(`<div id="html_c3f43f7d5510dd43b8148bafc83d64e3" style="width: 100.0%; height: 100.0%;">     <b>紅葉</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_6a818d652144d70daa2bc2885278fce2.setContent(html_c3f43f7d5510dd43b8148bafc83d64e3);
+            
+        
+
+        circle_marker_e4f4f4d982eae526cc29044c09d332e5.bindPopup(popup_6a818d652144d70daa2bc2885278fce2)
+        ;
+
+        
+    
+    
+            circle_marker_e4f4f4d982eae526cc29044c09d332e5.bindTooltip(
+                `<div>
+                     紅葉 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9290ad874ee92311699c99235d876c64 = L.circleMarker(
+                [23.443356, 121.327375],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_efb483c13ef6dcbb1552c7c3326f1b95 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d42e33bf32dab10fdd71a9b0ec76ae7f = $(`<div id="html_d42e33bf32dab10fdd71a9b0ec76ae7f" style="width: 100.0%; height: 100.0%;">     <b>立山</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 1.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_efb483c13ef6dcbb1552c7c3326f1b95.setContent(html_d42e33bf32dab10fdd71a9b0ec76ae7f);
+            
+        
+
+        circle_marker_9290ad874ee92311699c99235d876c64.bindPopup(popup_efb483c13ef6dcbb1552c7c3326f1b95)
+        ;
+
+        
+    
+    
+            circle_marker_9290ad874ee92311699c99235d876c64.bindTooltip(
+                `<div>
+                     立山 | 1hr: 1.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00fabc773c65bee6d7b12d8a7d219639 = L.circleMarker(
+                [23.455167, 121.495028],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_b075afecce61468c452ba6ddaf030fff = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c9d82a536359b4e73035b80c34b2478b = $(`<div id="html_c9d82a536359b4e73035b80c34b2478b" style="width: 100.0%; height: 100.0%;">     <b>靜浦</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_b075afecce61468c452ba6ddaf030fff.setContent(html_c9d82a536359b4e73035b80c34b2478b);
+            
+        
+
+        circle_marker_00fabc773c65bee6d7b12d8a7d219639.bindPopup(popup_b075afecce61468c452ba6ddaf030fff)
+        ;
+
+        
+    
+    
+            circle_marker_00fabc773c65bee6d7b12d8a7d219639.bindTooltip(
+                `<div>
+                     靜浦 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_531e3fa108be0444f22a7357bce1fef8 = L.circleMarker(
+                [23.345667, 121.213164],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_3f119366e4ffe8a19c7df810829db939 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_14871dfd7f22e074ead9a5e25a601e5b = $(`<div id="html_14871dfd7f22e074ead9a5e25a601e5b" style="width: 100.0%; height: 100.0%;">     <b>佳心</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_3f119366e4ffe8a19c7df810829db939.setContent(html_14871dfd7f22e074ead9a5e25a601e5b);
+            
+        
+
+        circle_marker_531e3fa108be0444f22a7357bce1fef8.bindPopup(popup_3f119366e4ffe8a19c7df810829db939)
+        ;
+
+        
+    
+    
+            circle_marker_531e3fa108be0444f22a7357bce1fef8.bindTooltip(
+                `<div>
+                     佳心 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_783faafeebc1ae11f508362e1b09c94c = L.circleMarker(
+                [23.3215, 121.339656],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_21debce60350a0a19eaa2368dc72fe23 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a3aed410d034ae52681fff5e30984753 = $(`<div id="html_a3aed410d034ae52681fff5e30984753" style="width: 100.0%; height: 100.0%;">     <b>玉里</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_21debce60350a0a19eaa2368dc72fe23.setContent(html_a3aed410d034ae52681fff5e30984753);
+            
+        
+
+        circle_marker_783faafeebc1ae11f508362e1b09c94c.bindPopup(popup_21debce60350a0a19eaa2368dc72fe23)
+        ;
+
+        
+    
+    
+            circle_marker_783faafeebc1ae11f508362e1b09c94c.bindTooltip(
+                `<div>
+                     玉里 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c392e5b4b10fd6f97289826817fbe74 = L.circleMarker(
+                [23.468114, 121.374069],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_cd243eea3456aa1464d05ae123a37fec = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_95814f340802210b7a30305d25ad0e7f = $(`<div id="html_95814f340802210b7a30305d25ad0e7f" style="width: 100.0%; height: 100.0%;">     <b>舞鶴</b><br>     County: 花蓮縣<br>     Town: 瑞穗鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_cd243eea3456aa1464d05ae123a37fec.setContent(html_95814f340802210b7a30305d25ad0e7f);
+            
+        
+
+        circle_marker_6c392e5b4b10fd6f97289826817fbe74.bindPopup(popup_cd243eea3456aa1464d05ae123a37fec)
+        ;
+
+        
+    
+    
+            circle_marker_6c392e5b4b10fd6f97289826817fbe74.bindTooltip(
+                `<div>
+                     舞鶴 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac84c3f8264b76f272aec13bd52c7d9a = L.circleMarker(
+                [23.809928, 121.539828],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_692c15f4bd1c299dfc69f59b3626725c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_04073e30be3fd39e3ead8a13402b01a0 = $(`<div id="html_04073e30be3fd39e3ead8a13402b01a0" style="width: 100.0%; height: 100.0%;">     <b>月眉山</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_692c15f4bd1c299dfc69f59b3626725c.setContent(html_04073e30be3fd39e3ead8a13402b01a0);
+            
+        
+
+        circle_marker_ac84c3f8264b76f272aec13bd52c7d9a.bindPopup(popup_692c15f4bd1c299dfc69f59b3626725c)
+        ;
+
+        
+    
+    
+            circle_marker_ac84c3f8264b76f272aec13bd52c7d9a.bindTooltip(
+                `<div>
+                     月眉山 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_001d67eaa98035e74f5dc6374cbeecb4 = L.circleMarker(
+                [23.991861, 121.537169],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0244802fde40df888c92bfcd3fd62ada = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_acc6ed176b79ce20dd1f08cf781cdc4d = $(`<div id="html_acc6ed176b79ce20dd1f08cf781cdc4d" style="width: 100.0%; height: 100.0%;">     <b>水源</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 2.5 mm<br>     3-hour rain: 0.5 mm<br>     24-hour rain: 2.5 mm     </div>`)[0];
+                popup_0244802fde40df888c92bfcd3fd62ada.setContent(html_acc6ed176b79ce20dd1f08cf781cdc4d);
+            
+        
+
+        circle_marker_001d67eaa98035e74f5dc6374cbeecb4.bindPopup(popup_0244802fde40df888c92bfcd3fd62ada)
+        ;
+
+        
+    
+    
+            circle_marker_001d67eaa98035e74f5dc6374cbeecb4.bindTooltip(
+                `<div>
+                     水源 | 1hr: 2.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bafe845ecbd60b7f0762f20dc34b1316 = L.circleMarker(
+                [23.735269, 121.420131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_9e220274f099c083b919bd2e5ae98c51 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7fc649e125f910922814d2f3253b2c9a = $(`<div id="html_7fc649e125f910922814d2f3253b2c9a" style="width: 100.0%; height: 100.0%;">     <b>鳳林山</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_9e220274f099c083b919bd2e5ae98c51.setContent(html_7fc649e125f910922814d2f3253b2c9a);
+            
+        
+
+        circle_marker_bafe845ecbd60b7f0762f20dc34b1316.bindPopup(popup_9e220274f099c083b919bd2e5ae98c51)
+        ;
+
+        
+    
+    
+            circle_marker_bafe845ecbd60b7f0762f20dc34b1316.bindTooltip(
+                `<div>
+                     鳳林山 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_854a8f989075282e7d1f4c507e47be4c = L.circleMarker(
+                [23.880628, 121.581981],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_69e0a0aa80512a9d187ca43681ffce45 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_518cd69dfa0b99b7c8c780f1c4b2b217 = $(`<div id="html_518cd69dfa0b99b7c8c780f1c4b2b217" style="width: 100.0%; height: 100.0%;">     <b>大坑</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 2.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 11.0 mm     </div>`)[0];
+                popup_69e0a0aa80512a9d187ca43681ffce45.setContent(html_518cd69dfa0b99b7c8c780f1c4b2b217);
+            
+        
+
+        circle_marker_854a8f989075282e7d1f4c507e47be4c.bindPopup(popup_69e0a0aa80512a9d187ca43681ffce45)
+        ;
+
+        
+    
+    
+            circle_marker_854a8f989075282e7d1f4c507e47be4c.bindTooltip(
+                `<div>
+                     大坑 | 1hr: 2.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4085a90ba58edede423085598269a1c = L.circleMarker(
+                [23.682947, 121.5274],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_ea7fe43216d03cbe55cd6a81d23b70de = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f91425a2189dc086a026f1c818f9648e = $(`<div id="html_f91425a2189dc086a026f1c818f9648e" style="width: 100.0%; height: 100.0%;">     <b>加路蘭山</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_ea7fe43216d03cbe55cd6a81d23b70de.setContent(html_f91425a2189dc086a026f1c818f9648e);
+            
+        
+
+        circle_marker_e4085a90ba58edede423085598269a1c.bindPopup(popup_ea7fe43216d03cbe55cd6a81d23b70de)
+        ;
+
+        
+    
+    
+            circle_marker_e4085a90ba58edede423085598269a1c.bindTooltip(
+                `<div>
+                     加路蘭山 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07d204e8c7722b29dbeb290e1b3ba0fd = L.circleMarker(
+                [23.583897, 121.514806],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0bb58326549c6e32b23d87c59b2c6d47 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1332bba95e805110a986e7b754b9e1bd = $(`<div id="html_1332bba95e805110a986e7b754b9e1bd" style="width: 100.0%; height: 100.0%;">     <b>豐濱</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_0bb58326549c6e32b23d87c59b2c6d47.setContent(html_1332bba95e805110a986e7b754b9e1bd);
+            
+        
+
+        circle_marker_07d204e8c7722b29dbeb290e1b3ba0fd.bindPopup(popup_0bb58326549c6e32b23d87c59b2c6d47)
+        ;
+
+        
+    
+    
+            circle_marker_07d204e8c7722b29dbeb290e1b3ba0fd.bindTooltip(
+                `<div>
+                     豐濱 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_130930211a15f6dfc795dae9e0d520d6 = L.circleMarker(
+                [24.266761, 121.741031],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_484ebc5281ccf75f0cca3e1264dffb0f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cc3772d32ed81a5bf9338bf10767e423 = $(`<div id="html_cc3772d32ed81a5bf9338bf10767e423" style="width: 100.0%; height: 100.0%;">     <b>和中</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 18.5 mm<br>     3-hour rain: 5.5 mm<br>     24-hour rain: 18.5 mm     </div>`)[0];
+                popup_484ebc5281ccf75f0cca3e1264dffb0f.setContent(html_cc3772d32ed81a5bf9338bf10767e423);
+            
+        
+
+        circle_marker_130930211a15f6dfc795dae9e0d520d6.bindPopup(popup_484ebc5281ccf75f0cca3e1264dffb0f)
+        ;
+
+        
+    
+    
+            circle_marker_130930211a15f6dfc795dae9e0d520d6.bindTooltip(
+                `<div>
+                     和中 | 1hr: 18.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be3e7277e6a1700d06450323d746c623 = L.circleMarker(
+                [23.587642, 121.378225],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_18bb94400956ac8318157917d9017195 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0e6e222160d424efeb66abfd5e9cca4a = $(`<div id="html_0e6e222160d424efeb66abfd5e9cca4a" style="width: 100.0%; height: 100.0%;">     <b>富源</b><br>     County: 花蓮縣<br>     Town: 光復鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_18bb94400956ac8318157917d9017195.setContent(html_0e6e222160d424efeb66abfd5e9cca4a);
+            
+        
+
+        circle_marker_be3e7277e6a1700d06450323d746c623.bindPopup(popup_18bb94400956ac8318157917d9017195)
+        ;
+
+        
+    
+    
+            circle_marker_be3e7277e6a1700d06450323d746c623.bindTooltip(
+                `<div>
+                     富源 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a9cb7a334d277e2588fc2ca49eca6487 = L.circleMarker(
+                [23.122139, 121.262389],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_3ed4296f80ed1b07af121ed803cf952d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_30d1bd2bec59845b5dc0e309d0ba0cbb = $(`<div id="html_30d1bd2bec59845b5dc0e309d0ba0cbb" style="width: 100.0%; height: 100.0%;">     <b>豐南</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_3ed4296f80ed1b07af121ed803cf952d.setContent(html_30d1bd2bec59845b5dc0e309d0ba0cbb);
+            
+        
+
+        circle_marker_a9cb7a334d277e2588fc2ca49eca6487.bindPopup(popup_3ed4296f80ed1b07af121ed803cf952d)
+        ;
+
+        
+    
+    
+            circle_marker_a9cb7a334d277e2588fc2ca49eca6487.bindTooltip(
+                `<div>
+                     豐南 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_088659da4557150bfabd8b684929f146 = L.circleMarker(
+                [23.89525, 121.549833],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_c47c169447dd9525191b56db366d65cb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1d2eb03825180e15d566f1a6cb22e61c = $(`<div id="html_1d2eb03825180e15d566f1a6cb22e61c" style="width: 100.0%; height: 100.0%;">     <b>東華</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_c47c169447dd9525191b56db366d65cb.setContent(html_1d2eb03825180e15d566f1a6cb22e61c);
+            
+        
+
+        circle_marker_088659da4557150bfabd8b684929f146.bindPopup(popup_c47c169447dd9525191b56db366d65cb)
+        ;
+
+        
+    
+    
+            circle_marker_088659da4557150bfabd8b684929f146.bindTooltip(
+                `<div>
+                     東華 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae33c877484864a9430251e412da6929 = L.circleMarker(
+                [23.295556, 121.266944],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_c4aed1c7625febaaa9d84c91ff7bbda5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_bbc712a7030ce195aad0d9f573cf48de = $(`<div id="html_bbc712a7030ce195aad0d9f573cf48de" style="width: 100.0%; height: 100.0%;">     <b>卓麓(4)</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_c4aed1c7625febaaa9d84c91ff7bbda5.setContent(html_bbc712a7030ce195aad0d9f573cf48de);
+            
+        
+
+        circle_marker_ae33c877484864a9430251e412da6929.bindPopup(popup_c4aed1c7625febaaa9d84c91ff7bbda5)
+        ;
+
+        
+    
+    
+            circle_marker_ae33c877484864a9430251e412da6929.bindTooltip(
+                `<div>
+                     卓麓(4) | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58e55535f6edc73d2a47c95f96e5751e = L.circleMarker(
+                [23.430078, 121.312632],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_e7bdab658c27f26f556617f73bc58c55 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8213869b3447d62dd1ce0d9cc8385553 = $(`<div id="html_8213869b3447d62dd1ce0d9cc8385553" style="width: 100.0%; height: 100.0%;">     <b>立山</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_e7bdab658c27f26f556617f73bc58c55.setContent(html_8213869b3447d62dd1ce0d9cc8385553);
+            
+        
+
+        circle_marker_58e55535f6edc73d2a47c95f96e5751e.bindPopup(popup_e7bdab658c27f26f556617f73bc58c55)
+        ;
+
+        
+    
+    
+            circle_marker_58e55535f6edc73d2a47c95f96e5751e.bindTooltip(
+                `<div>
+                     立山 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b296f95d017c1aa5f7aa95077b5fd84 = L.circleMarker(
+                [24.037079, 121.604462],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_88978790e44d201359ea5724d925eebf = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d72359d68c1904b5fabc7cdbf6bf4a0c = $(`<div id="html_d72359d68c1904b5fabc7cdbf6bf4a0c" style="width: 100.0%; height: 100.0%;">     <b>北埔</b><br>     County: 花蓮縣<br>     Town: 新城鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_88978790e44d201359ea5724d925eebf.setContent(html_d72359d68c1904b5fabc7cdbf6bf4a0c);
+            
+        
+
+        circle_marker_2b296f95d017c1aa5f7aa95077b5fd84.bindPopup(popup_88978790e44d201359ea5724d925eebf)
+        ;
+
+        
+    
+    
+            circle_marker_2b296f95d017c1aa5f7aa95077b5fd84.bindTooltip(
+                `<div>
+                     北埔 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f85586cd6a08fd0bea6d223b60f2232b = L.circleMarker(
+                [23.819214, 121.432069],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_45d52d84ffd364eeb7d91ed7d5b3157d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2928d1584635b4c311329b919e4c765e = $(`<div id="html_2928d1584635b4c311329b919e4c765e" style="width: 100.0%; height: 100.0%;">     <b>西林</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_45d52d84ffd364eeb7d91ed7d5b3157d.setContent(html_2928d1584635b4c311329b919e4c765e);
+            
+        
+
+        circle_marker_f85586cd6a08fd0bea6d223b60f2232b.bindPopup(popup_45d52d84ffd364eeb7d91ed7d5b3157d)
+        ;
+
+        
+    
+    
+            circle_marker_f85586cd6a08fd0bea6d223b60f2232b.bindTooltip(
+                `<div>
+                     西林 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a041fe3d66a2d2809ea2a0aadf991e0 = L.circleMarker(
+                [23.672706, 121.371893],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_ceaa285659843e6161c2bcbaf19b1726 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4b4ed0dc87b393f24b614e8cc6ca0ae4 = $(`<div id="html_4b4ed0dc87b393f24b614e8cc6ca0ae4" style="width: 100.0%; height: 100.0%;">     <b>馬太安</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 1.0 mm<br>     3-hour rain: 1.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_ceaa285659843e6161c2bcbaf19b1726.setContent(html_4b4ed0dc87b393f24b614e8cc6ca0ae4);
+            
+        
+
+        circle_marker_6a041fe3d66a2d2809ea2a0aadf991e0.bindPopup(popup_ceaa285659843e6161c2bcbaf19b1726)
+        ;
+
+        
+    
+    
+            circle_marker_6a041fe3d66a2d2809ea2a0aadf991e0.bindTooltip(
+                `<div>
+                     馬太安 | 1hr: 1.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c2670ce5624ca78ae1648dcd1f6950f = L.circleMarker(
+                [23.814841, 121.403464],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_822780eb30e0d8f9f0a4c33c00fa5535 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_52b56c51e4070370480659bdd468f12c = $(`<div id="html_52b56c51e4070370480659bdd468f12c" style="width: 100.0%; height: 100.0%;">     <b>新東礦</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_822780eb30e0d8f9f0a4c33c00fa5535.setContent(html_52b56c51e4070370480659bdd468f12c);
+            
+        
+
+        circle_marker_7c2670ce5624ca78ae1648dcd1f6950f.bindPopup(popup_822780eb30e0d8f9f0a4c33c00fa5535)
+        ;
+
+        
+    
+    
+            circle_marker_7c2670ce5624ca78ae1648dcd1f6950f.bindTooltip(
+                `<div>
+                     新東礦 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf253fd2982b3913beb7ce3b5d90313b = L.circleMarker(
+                [23.202324, 121.25167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_c93633dd2162bcaeca15efce101816f3 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aea3e3c6da60f56a959d31db822c13c1 = $(`<div id="html_aea3e3c6da60f56a959d31db822c13c1" style="width: 100.0%; height: 100.0%;">     <b>明里</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_c93633dd2162bcaeca15efce101816f3.setContent(html_aea3e3c6da60f56a959d31db822c13c1);
+            
+        
+
+        circle_marker_bf253fd2982b3913beb7ce3b5d90313b.bindPopup(popup_c93633dd2162bcaeca15efce101816f3)
+        ;
+
+        
+    
+    
+            circle_marker_bf253fd2982b3913beb7ce3b5d90313b.bindTooltip(
+                `<div>
+                     明里 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13a902df0e350b5ad0225634c232e261 = L.circleMarker(
+                [23.602442, 121.520492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_f07c174fd9ee4c5069bb51d6876316a6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d7262feaa298a653bc2712a731f02859 = $(`<div id="html_d7262feaa298a653bc2712a731f02859" style="width: 100.0%; height: 100.0%;">     <b>豐濱</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_f07c174fd9ee4c5069bb51d6876316a6.setContent(html_d7262feaa298a653bc2712a731f02859);
+            
+        
+
+        circle_marker_13a902df0e350b5ad0225634c232e261.bindPopup(popup_f07c174fd9ee4c5069bb51d6876316a6)
+        ;
+
+        
+    
+    
+            circle_marker_13a902df0e350b5ad0225634c232e261.bindTooltip(
+                `<div>
+                     豐濱 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94d0b88bc66ec33946605cb526bba2d1 = L.circleMarker(
+                [23.217557, 121.32297],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_744c12d8638bd96936538597e30de986 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ff160614292d829824265d8e41dff7e6 = $(`<div id="html_ff160614292d829824265d8e41dff7e6" style="width: 100.0%; height: 100.0%;">     <b>六十石山</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_744c12d8638bd96936538597e30de986.setContent(html_ff160614292d829824265d8e41dff7e6);
+            
+        
+
+        circle_marker_94d0b88bc66ec33946605cb526bba2d1.bindPopup(popup_744c12d8638bd96936538597e30de986)
+        ;
+
+        
+    
+    
+            circle_marker_94d0b88bc66ec33946605cb526bba2d1.bindTooltip(
+                `<div>
+                     六十石山 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b264301f14f3633c469e480aba9ba02 = L.circleMarker(
+                [23.684836, 121.482088],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_9471c5484a355f3beb26fb2b0d9f640c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3c00c4ad8920ea10d639789565eaf1b7 = $(`<div id="html_3c00c4ad8920ea10d639789565eaf1b7" style="width: 100.0%; height: 100.0%;">     <b>東富</b><br>     County: 花蓮縣<br>     Town: 光復鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 2.0 mm     </div>`)[0];
+                popup_9471c5484a355f3beb26fb2b0d9f640c.setContent(html_3c00c4ad8920ea10d639789565eaf1b7);
+            
+        
+
+        circle_marker_3b264301f14f3633c469e480aba9ba02.bindPopup(popup_9471c5484a355f3beb26fb2b0d9f640c)
+        ;
+
+        
+    
+    
+            circle_marker_3b264301f14f3633c469e480aba9ba02.bindTooltip(
+                `<div>
+                     東富 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3809171bff7b32436443b2ad35d34a62 = L.circleMarker(
+                [23.496927, 121.445929],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_ec4a2ba1bcb324822026b29f37552aff = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2c0b6b722de6b31e66b8f70a27d83cba = $(`<div id="html_2c0b6b722de6b31e66b8f70a27d83cba" style="width: 100.0%; height: 100.0%;">     <b>奇美國小</b><br>     County: 花蓮縣<br>     Town: 瑞穗鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_ec4a2ba1bcb324822026b29f37552aff.setContent(html_2c0b6b722de6b31e66b8f70a27d83cba);
+            
+        
+
+        circle_marker_3809171bff7b32436443b2ad35d34a62.bindPopup(popup_ec4a2ba1bcb324822026b29f37552aff)
+        ;
+
+        
+    
+    
+            circle_marker_3809171bff7b32436443b2ad35d34a62.bindTooltip(
+                `<div>
+                     奇美國小 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34fb351f22f8e8426d66f9dabeb54377 = L.circleMarker(
+                [23.278428, 121.271983],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_705c6b862b8687984a1badd95d139102 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2ada605ac3321633c349368dc64812f7 = $(`<div id="html_2ada605ac3321633c349368dc64812f7" style="width: 100.0%; height: 100.0%;">     <b>卓清國小</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_705c6b862b8687984a1badd95d139102.setContent(html_2ada605ac3321633c349368dc64812f7);
+            
+        
+
+        circle_marker_34fb351f22f8e8426d66f9dabeb54377.bindPopup(popup_705c6b862b8687984a1badd95d139102)
+        ;
+
+        
+    
+    
+            circle_marker_34fb351f22f8e8426d66f9dabeb54377.bindTooltip(
+                `<div>
+                     卓清國小 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b73fab53dc44b8ea7336a30606dc6f7a = L.circleMarker(
+                [23.405748, 121.320127],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0f98c09d16827ac6d14174be2c99eb5e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ce8712f499585f742668e440c68e9e69 = $(`<div id="html_ce8712f499585f742668e440c68e9e69" style="width: 100.0%; height: 100.0%;">     <b>太平國小</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 1.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_0f98c09d16827ac6d14174be2c99eb5e.setContent(html_ce8712f499585f742668e440c68e9e69);
+            
+        
+
+        circle_marker_b73fab53dc44b8ea7336a30606dc6f7a.bindPopup(popup_0f98c09d16827ac6d14174be2c99eb5e)
+        ;
+
+        
+    
+    
+            circle_marker_b73fab53dc44b8ea7336a30606dc6f7a.bindTooltip(
+                `<div>
+                     太平國小 | 1hr: 1.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68e1f146db955d16b1fa31433e277aae = L.circleMarker(
+                [24.270832, 121.741801],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_1c927b3cab59b17df5a13d4a72f9b8fa = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_14e07d5df04b0ee2c498b9209e6d8bc4 = $(`<div id="html_14e07d5df04b0ee2c498b9209e6d8bc4" style="width: 100.0%; height: 100.0%;">     <b>和中</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 17.0 mm<br>     3-hour rain: 5.0 mm<br>     24-hour rain: 17.0 mm     </div>`)[0];
+                popup_1c927b3cab59b17df5a13d4a72f9b8fa.setContent(html_14e07d5df04b0ee2c498b9209e6d8bc4);
+            
+        
+
+        circle_marker_68e1f146db955d16b1fa31433e277aae.bindPopup(popup_1c927b3cab59b17df5a13d4a72f9b8fa)
+        ;
+
+        
+    
+    
+            circle_marker_68e1f146db955d16b1fa31433e277aae.bindTooltip(
+                `<div>
+                     和中 | 1hr: 17.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5a23c1e678332d276d5a3dcb00f9484 = L.circleMarker(
+                [23.972934, 121.605986],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_7af8730b583ffc290a02f0d13a8c567a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_26d2dfda870a84602d2cd8f9ff306b35 = $(`<div id="html_26d2dfda870a84602d2cd8f9ff306b35" style="width: 100.0%; height: 100.0%;">     <b>花蓮</b><br>     County: 花蓮縣<br>     Town: 花蓮市<br>     1-hour rain: 2.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 15.0 mm     </div>`)[0];
+                popup_7af8730b583ffc290a02f0d13a8c567a.setContent(html_26d2dfda870a84602d2cd8f9ff306b35);
+            
+        
+
+        circle_marker_a5a23c1e678332d276d5a3dcb00f9484.bindPopup(popup_7af8730b583ffc290a02f0d13a8c567a)
+        ;
+
+        
+    
+    
+            circle_marker_a5a23c1e678332d276d5a3dcb00f9484.bindTooltip(
+                `<div>
+                     花蓮 | 1hr: 2.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7403ac25d968d9d103448d279fa93aa = L.circleMarker(
+                [23.740881, 121.42608],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_97da0f39bfd0defdb0a636bf8b411081 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_699733db4d5fabd047231ae7618185c6 = $(`<div id="html_699733db4d5fabd047231ae7618185c6" style="width: 100.0%; height: 100.0%;">     <b>鳳義坑</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_97da0f39bfd0defdb0a636bf8b411081.setContent(html_699733db4d5fabd047231ae7618185c6);
+            
+        
+
+        circle_marker_b7403ac25d968d9d103448d279fa93aa.bindPopup(popup_97da0f39bfd0defdb0a636bf8b411081)
+        ;
+
+        
+    
+    
+            circle_marker_b7403ac25d968d9d103448d279fa93aa.bindTooltip(
+                `<div>
+                     鳳義坑 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bbecfbe9960a316263c86aefb51e75b = L.circleMarker(
+                [23.819722, 121.473333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_23713611ea71d979d6ee49197a0d3a08 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_dfac2472cb5065bc6e6c1319510957b3 = $(`<div id="html_dfac2472cb5065bc6e6c1319510957b3" style="width: 100.0%; height: 100.0%;">     <b>溪口國小</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_23713611ea71d979d6ee49197a0d3a08.setContent(html_dfac2472cb5065bc6e6c1319510957b3);
+            
+        
+
+        circle_marker_9bbecfbe9960a316263c86aefb51e75b.bindPopup(popup_23713611ea71d979d6ee49197a0d3a08)
+        ;
+
+        
+    
+    
+            circle_marker_9bbecfbe9960a316263c86aefb51e75b.bindTooltip(
+                `<div>
+                     溪口國小 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b916e93b445deaa811e26ad2256ee386 = L.circleMarker(
+                [23.727778, 121.4975],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_3c9d5f71ddce589c6042a351ef241fdb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_adf128717bb5d9a85098e3e62d341607 = $(`<div id="html_adf128717bb5d9a85098e3e62d341607" style="width: 100.0%; height: 100.0%;">     <b>山興分校</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_3c9d5f71ddce589c6042a351ef241fdb.setContent(html_adf128717bb5d9a85098e3e62d341607);
+            
+        
+
+        circle_marker_b916e93b445deaa811e26ad2256ee386.bindPopup(popup_3c9d5f71ddce589c6042a351ef241fdb)
+        ;
+
+        
+    
+    
+            circle_marker_b916e93b445deaa811e26ad2256ee386.bindTooltip(
+                `<div>
+                     山興分校 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf6056f7b20fb78b8406331b5b5dd62a = L.circleMarker(
+                [23.635204, 121.530893],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_401c34e5f6d1630bf192cc208b99659d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f0a4ddddd856fb3c0f5efccd6224758d = $(`<div id="html_f0a4ddddd856fb3c0f5efccd6224758d" style="width: 100.0%; height: 100.0%;">     <b>東興部落</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_401c34e5f6d1630bf192cc208b99659d.setContent(html_f0a4ddddd856fb3c0f5efccd6224758d);
+            
+        
+
+        circle_marker_cf6056f7b20fb78b8406331b5b5dd62a.bindPopup(popup_401c34e5f6d1630bf192cc208b99659d)
+        ;
+
+        
+    
+    
+            circle_marker_cf6056f7b20fb78b8406331b5b5dd62a.bindTooltip(
+                `<div>
+                     東興部落 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0eb274b732a4741903dbca82e9c7794 = L.circleMarker(
+                [23.483056, 121.511389],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_742c6f1a44e4bfb5b59d477abe80393b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3cdd90f01e69b8b12a5f1868d4633dbf = $(`<div id="html_3cdd90f01e69b8b12a5f1868d4633dbf" style="width: 100.0%; height: 100.0%;">     <b>石梯坪</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_742c6f1a44e4bfb5b59d477abe80393b.setContent(html_3cdd90f01e69b8b12a5f1868d4633dbf);
+            
+        
+
+        circle_marker_c0eb274b732a4741903dbca82e9c7794.bindPopup(popup_742c6f1a44e4bfb5b59d477abe80393b)
+        ;
+
+        
+    
+    
+            circle_marker_c0eb274b732a4741903dbca82e9c7794.bindTooltip(
+                `<div>
+                     石梯坪 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_292558e2a8acdc9934160628163e6cc3 = L.circleMarker(
+                [23.525556, 121.376111],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_32598eb72b95d3a8351404d130e58d7a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d7c190ffa6caac6c9537bd96e67cb1d1 = $(`<div id="html_d7c190ffa6caac6c9537bd96e67cb1d1" style="width: 100.0%; height: 100.0%;">     <b>瑞北國小</b><br>     County: 花蓮縣<br>     Town: 瑞穗鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_32598eb72b95d3a8351404d130e58d7a.setContent(html_d7c190ffa6caac6c9537bd96e67cb1d1);
+            
+        
+
+        circle_marker_292558e2a8acdc9934160628163e6cc3.bindPopup(popup_32598eb72b95d3a8351404d130e58d7a)
+        ;
+
+        
+    
+    
+            circle_marker_292558e2a8acdc9934160628163e6cc3.bindTooltip(
+                `<div>
+                     瑞北國小 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d087d0c8901e1bdb7ff70c11c57f1748 = L.circleMarker(
+                [23.345833, 121.303333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_63f3765f860b9e2bc73923bd8fce1205 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_fa120ffb23af59a2c301416ddda178e4 = $(`<div id="html_fa120ffb23af59a2c301416ddda178e4" style="width: 100.0%; height: 100.0%;">     <b>卓溪國小</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_63f3765f860b9e2bc73923bd8fce1205.setContent(html_fa120ffb23af59a2c301416ddda178e4);
+            
+        
+
+        circle_marker_d087d0c8901e1bdb7ff70c11c57f1748.bindPopup(popup_63f3765f860b9e2bc73923bd8fce1205)
+        ;
+
+        
+    
+    
+            circle_marker_d087d0c8901e1bdb7ff70c11c57f1748.bindTooltip(
+                `<div>
+                     卓溪國小 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9fa884a84e208637ef33442aa5850ec = L.circleMarker(
+                [23.263333, 121.303056],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_5ddbc4f1d55f9da8939def051955f8c0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_35e9f1bf801b4cc136e8df1597ec2bfc = $(`<div id="html_35e9f1bf801b4cc136e8df1597ec2bfc" style="width: 100.0%; height: 100.0%;">     <b>東里國中</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_5ddbc4f1d55f9da8939def051955f8c0.setContent(html_35e9f1bf801b4cc136e8df1597ec2bfc);
+            
+        
+
+        circle_marker_b9fa884a84e208637ef33442aa5850ec.bindPopup(popup_5ddbc4f1d55f9da8939def051955f8c0)
+        ;
+
+        
+    
+    
+            circle_marker_b9fa884a84e208637ef33442aa5850ec.bindTooltip(
+                `<div>
+                     東里國中 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a68d5a3a1438b4c983a61f30b5694194 = L.circleMarker(
+                [24.115569, 121.605006],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_db5d701e2e2e8007e171e9efe0dc530c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4cb61d6728b2554695077e36ec8edd1a = $(`<div id="html_4cb61d6728b2554695077e36ec8edd1a" style="width: 100.0%; height: 100.0%;">     <b>三棧</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 13.0 mm<br>     3-hour rain: 1.0 mm<br>     24-hour rain: 13.0 mm     </div>`)[0];
+                popup_db5d701e2e2e8007e171e9efe0dc530c.setContent(html_4cb61d6728b2554695077e36ec8edd1a);
+            
+        
+
+        circle_marker_a68d5a3a1438b4c983a61f30b5694194.bindPopup(popup_db5d701e2e2e8007e171e9efe0dc530c)
+        ;
+
+        
+    
+    
+            circle_marker_a68d5a3a1438b4c983a61f30b5694194.bindTooltip(
+                `<div>
+                     三棧 | 1hr: 13.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ca253d06b7feb9dbe68e2917f53d15a = L.circleMarker(
+                [23.870853, 121.508081],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_679c457d74005e5f4b87626e96e0e4ac = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0611fc07bdbff1f6d227a1453fc2690f = $(`<div id="html_0611fc07bdbff1f6d227a1453fc2690f" style="width: 100.0%; height: 100.0%;">     <b>壽豐</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_679c457d74005e5f4b87626e96e0e4ac.setContent(html_0611fc07bdbff1f6d227a1453fc2690f);
+            
+        
+
+        circle_marker_3ca253d06b7feb9dbe68e2917f53d15a.bindPopup(popup_679c457d74005e5f4b87626e96e0e4ac)
+        ;
+
+        
+    
+    
+            circle_marker_3ca253d06b7feb9dbe68e2917f53d15a.bindTooltip(
+                `<div>
+                     壽豐 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b04b64fc172834553ca6c71edd52ef0a = L.circleMarker(
+                [23.965694, 121.492842],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_6f2a77b03e35d76d86a4eabaa06faa1b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b5f357a3f62bc81953b428b6a41f57c4 = $(`<div id="html_b5f357a3f62bc81953b428b6a41f57c4" style="width: 100.0%; height: 100.0%;">     <b>銅門</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_6f2a77b03e35d76d86a4eabaa06faa1b.setContent(html_b5f357a3f62bc81953b428b6a41f57c4);
+            
+        
+
+        circle_marker_b04b64fc172834553ca6c71edd52ef0a.bindPopup(popup_6f2a77b03e35d76d86a4eabaa06faa1b)
+        ;
+
+        
+    
+    
+            circle_marker_b04b64fc172834553ca6c71edd52ef0a.bindTooltip(
+                `<div>
+                     銅門 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08239f7fcaee3f9ffdd6910a7980cbad = L.circleMarker(
+                [23.930925, 121.595153],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_2414ffa13de4f5da0d8ef887a3744d8c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8fb7df34df4cf94d8647de0a701051a0 = $(`<div id="html_8fb7df34df4cf94d8647de0a701051a0" style="width: 100.0%; height: 100.0%;">     <b>吉安光華</b><br>     County: 花蓮縣<br>     Town: 吉安鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 11.5 mm     </div>`)[0];
+                popup_2414ffa13de4f5da0d8ef887a3744d8c.setContent(html_8fb7df34df4cf94d8647de0a701051a0);
+            
+        
+
+        circle_marker_08239f7fcaee3f9ffdd6910a7980cbad.bindPopup(popup_2414ffa13de4f5da0d8ef887a3744d8c)
+        ;
+
+        
+    
+    
+            circle_marker_08239f7fcaee3f9ffdd6910a7980cbad.bindTooltip(
+                `<div>
+                     吉安光華 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9205ccb9cd7913e54587997dbf79d03 = L.circleMarker(
+                [23.746114, 121.453411],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_05cfb0dcba8714ca01dc81c7a48b9793 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0d2ddf59c6d662d183360071a3f97827 = $(`<div id="html_0d2ddf59c6d662d183360071a3f97827" style="width: 100.0%; height: 100.0%;">     <b>鳳林</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_05cfb0dcba8714ca01dc81c7a48b9793.setContent(html_0d2ddf59c6d662d183360071a3f97827);
+            
+        
+
+        circle_marker_e9205ccb9cd7913e54587997dbf79d03.bindPopup(popup_05cfb0dcba8714ca01dc81c7a48b9793)
+        ;
+
+        
+    
+    
+            circle_marker_e9205ccb9cd7913e54587997dbf79d03.bindTooltip(
+                `<div>
+                     鳳林 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d34f6d3a4d11fe3dc7f38785742744d = L.circleMarker(
+                [23.344331, 121.302853],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_c8b28d7c7d2dcfd650deabea7189ee93 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_59acdcf8e9468c38a1be78407379e710 = $(`<div id="html_59acdcf8e9468c38a1be78407379e710" style="width: 100.0%; height: 100.0%;">     <b>卓溪</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_c8b28d7c7d2dcfd650deabea7189ee93.setContent(html_59acdcf8e9468c38a1be78407379e710);
+            
+        
+
+        circle_marker_6d34f6d3a4d11fe3dc7f38785742744d.bindPopup(popup_c8b28d7c7d2dcfd650deabea7189ee93)
+        ;
+
+        
+    
+    
+            circle_marker_6d34f6d3a4d11fe3dc7f38785742744d.bindTooltip(
+                `<div>
+                     卓溪 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9cfa35dfdd3b77f73767e090edb1e6a1 = L.circleMarker(
+                [24.040486, 121.604878],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_8b9772ef94b366d1c55e61600160b571 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ab15a2650a8aa98252954b2e197de3d9 = $(`<div id="html_ab15a2650a8aa98252954b2e197de3d9" style="width: 100.0%; height: 100.0%;">     <b>新城</b><br>     County: 花蓮縣<br>     Town: 新城鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_8b9772ef94b366d1c55e61600160b571.setContent(html_ab15a2650a8aa98252954b2e197de3d9);
+            
+        
+
+        circle_marker_9cfa35dfdd3b77f73767e090edb1e6a1.bindPopup(popup_8b9772ef94b366d1c55e61600160b571)
+        ;
+
+        
+    
+    
+            circle_marker_9cfa35dfdd3b77f73767e090edb1e6a1.bindTooltip(
+                `<div>
+                     新城 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e23c151bed1f2223697752d070fec274 = L.circleMarker(
+                [24.147433, 121.629703],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0e8b8f9e498d776c44b211ce37515352 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f486ca4906678d828d5a0354cebd2790 = $(`<div id="html_f486ca4906678d828d5a0354cebd2790" style="width: 100.0%; height: 100.0%;">     <b>富世</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 19.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 19.0 mm     </div>`)[0];
+                popup_0e8b8f9e498d776c44b211ce37515352.setContent(html_f486ca4906678d828d5a0354cebd2790);
+            
+        
+
+        circle_marker_e23c151bed1f2223697752d070fec274.bindPopup(popup_0e8b8f9e498d776c44b211ce37515352)
+        ;
+
+        
+    
+    
+            circle_marker_e23c151bed1f2223697752d070fec274.bindTooltip(
+                `<div>
+                     富世 | 1hr: 19.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3ae3593433c167a93bc78d65f84de52 = L.circleMarker(
+                [23.709219, 121.420106],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_f6d3c6de74eca897c2a6e5a2b560c797 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_888d9acbf07f15dad3f528e49c7cc96f = $(`<div id="html_888d9acbf07f15dad3f528e49c7cc96f" style="width: 100.0%; height: 100.0%;">     <b>萬榮</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_f6d3c6de74eca897c2a6e5a2b560c797.setContent(html_888d9acbf07f15dad3f528e49c7cc96f);
+            
+        
+
+        circle_marker_f3ae3593433c167a93bc78d65f84de52.bindPopup(popup_f6d3c6de74eca897c2a6e5a2b560c797)
+        ;
+
+        
+    
+    
+            circle_marker_f3ae3593433c167a93bc78d65f84de52.bindTooltip(
+                `<div>
+                     萬榮 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_501fbdca120143deb18a7db8569947d8 = L.circleMarker(
+                [23.73835, 121.540108],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_85b153a6b3f54b26c03993b707240517 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_58a3e13157fb981b348e9c99948b064e = $(`<div id="html_58a3e13157fb981b348e9c99948b064e" style="width: 100.0%; height: 100.0%;">     <b>蕃薯寮</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_85b153a6b3f54b26c03993b707240517.setContent(html_58a3e13157fb981b348e9c99948b064e);
+            
+        
+
+        circle_marker_501fbdca120143deb18a7db8569947d8.bindPopup(popup_85b153a6b3f54b26c03993b707240517)
+        ;
+
+        
+    
+    
+            circle_marker_501fbdca120143deb18a7db8569947d8.bindTooltip(
+                `<div>
+                     蕃薯寮 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b90a01c79d165bf76e242973c688099 = L.circleMarker(
+                [23.631944, 121.397778],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_87527b9373ea583f5907c4707e9f3443 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_82e408417d8b0012b55a62b10308a50b = $(`<div id="html_82e408417d8b0012b55a62b10308a50b" style="width: 100.0%; height: 100.0%;">     <b>大興</b><br>     County: 花蓮縣<br>     Town: 光復鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_87527b9373ea583f5907c4707e9f3443.setContent(html_82e408417d8b0012b55a62b10308a50b);
+            
+        
+
+        circle_marker_7b90a01c79d165bf76e242973c688099.bindPopup(popup_87527b9373ea583f5907c4707e9f3443)
+        ;
+
+        
+    
+    
+            circle_marker_7b90a01c79d165bf76e242973c688099.bindTooltip(
+                `<div>
+                     大興 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90c656d2807e6c6daea2b6fd560944b6 = L.circleMarker(
+                [23.5239, 121.390211],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_c7c6504091486344d7b89dc895f8747c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_dd731c446bdd9441014cd9f2484bbadc = $(`<div id="html_dd731c446bdd9441014cd9f2484bbadc" style="width: 100.0%; height: 100.0%;">     <b>瑞穗</b><br>     County: 花蓮縣<br>     Town: 瑞穗鄉<br>     1-hour rain: 1.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.5 mm     </div>`)[0];
+                popup_c7c6504091486344d7b89dc895f8747c.setContent(html_dd731c446bdd9441014cd9f2484bbadc);
+            
+        
+
+        circle_marker_90c656d2807e6c6daea2b6fd560944b6.bindPopup(popup_c7c6504091486344d7b89dc895f8747c)
+        ;
+
+        
+    
+    
+            circle_marker_90c656d2807e6c6daea2b6fd560944b6.bindTooltip(
+                `<div>
+                     瑞穗 | 1hr: 1.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a05386d7688cc9b3cbdab10a7f93ad32 = L.circleMarker(
+                [24.343922, 121.656317],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0d08fe436d9fa7064732531b150f6627 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_72e241dfd1bf302f4a2b60a09c70992a = $(`<div id="html_72e241dfd1bf302f4a2b60a09c70992a" style="width: 100.0%; height: 100.0%;">     <b>和平林道</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_0d08fe436d9fa7064732531b150f6627.setContent(html_72e241dfd1bf302f4a2b60a09c70992a);
+            
+        
+
+        circle_marker_a05386d7688cc9b3cbdab10a7f93ad32.bindPopup(popup_0d08fe436d9fa7064732531b150f6627)
+        ;
+
+        
+    
+    
+            circle_marker_a05386d7688cc9b3cbdab10a7f93ad32.bindTooltip(
+                `<div>
+                     和平林道 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_627e5a45464c5dfe40a4eb11462742f6 = L.circleMarker(
+                [24.307169, 121.770069],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_61744060e63869434a56971c48ae4c02 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_dd7476ac773110e73394584b2ec81fe0 = $(`<div id="html_dd7476ac773110e73394584b2ec81fe0" style="width: 100.0%; height: 100.0%;">     <b>和平</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 4.5 mm<br>     3-hour rain: 3.5 mm<br>     24-hour rain: 4.5 mm     </div>`)[0];
+                popup_61744060e63869434a56971c48ae4c02.setContent(html_dd7476ac773110e73394584b2ec81fe0);
+            
+        
+
+        circle_marker_627e5a45464c5dfe40a4eb11462742f6.bindPopup(popup_61744060e63869434a56971c48ae4c02)
+        ;
+
+        
+    
+    
+            circle_marker_627e5a45464c5dfe40a4eb11462742f6.bindTooltip(
+                `<div>
+                     和平 | 1hr: 4.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_397c429f901f87a57692577ba53f5617 = L.circleMarker(
+                [23.421147, 121.267631],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_aea075d0d632a69964be0ca8d1617dfb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e31d7e3bb7ea86da6beb9fb09d45f023 = $(`<div id="html_e31d7e3bb7ea86da6beb9fb09d45f023" style="width: 100.0%; height: 100.0%;">     <b>中平林道</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_aea075d0d632a69964be0ca8d1617dfb.setContent(html_e31d7e3bb7ea86da6beb9fb09d45f023);
+            
+        
+
+        circle_marker_397c429f901f87a57692577ba53f5617.bindPopup(popup_aea075d0d632a69964be0ca8d1617dfb)
+        ;
+
+        
+    
+    
+            circle_marker_397c429f901f87a57692577ba53f5617.bindTooltip(
+                `<div>
+                     中平林道 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a8eb039c8b8162be2126bfb2730a4153 = L.circleMarker(
+                [23.492842, 121.306883],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_ef835659246ff5d4d5560d2645ae51a4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f47e81cabdea61fa7c067570180b3e46 = $(`<div id="html_f47e81cabdea61fa7c067570180b3e46" style="width: 100.0%; height: 100.0%;">     <b>瑞穗林道</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_ef835659246ff5d4d5560d2645ae51a4.setContent(html_f47e81cabdea61fa7c067570180b3e46);
+            
+        
+
+        circle_marker_a8eb039c8b8162be2126bfb2730a4153.bindPopup(popup_ef835659246ff5d4d5560d2645ae51a4)
+        ;
+
+        
+    
+    
+            circle_marker_a8eb039c8b8162be2126bfb2730a4153.bindTooltip(
+                `<div>
+                     瑞穗林道 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da7b32f574086c2e0853d8463c36af90 = L.circleMarker(
+                [23.474264, 121.410711],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_95d70aabbdc4e07ce973307ded1c3426 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cb6c9f51cb58990b601d9cc65302341f = $(`<div id="html_cb6c9f51cb58990b601d9cc65302341f" style="width: 100.0%; height: 100.0%;">     <b>德武</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_95d70aabbdc4e07ce973307ded1c3426.setContent(html_cb6c9f51cb58990b601d9cc65302341f);
+            
+        
+
+        circle_marker_da7b32f574086c2e0853d8463c36af90.bindPopup(popup_95d70aabbdc4e07ce973307ded1c3426)
+        ;
+
+        
+    
+    
+            circle_marker_da7b32f574086c2e0853d8463c36af90.bindTooltip(
+                `<div>
+                     德武 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf69f25478baf39abed69daab0b70b7e = L.circleMarker(
+                [23.368928, 121.382931],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_56400a2e2d310043376a4a1dbd8bfe8e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d6724f10b0bccdc310df5a4a2066c15c = $(`<div id="html_d6724f10b0bccdc310df5a4a2066c15c" style="width: 100.0%; height: 100.0%;">     <b>赤柯山</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_56400a2e2d310043376a4a1dbd8bfe8e.setContent(html_d6724f10b0bccdc310df5a4a2066c15c);
+            
+        
+
+        circle_marker_bf69f25478baf39abed69daab0b70b7e.bindPopup(popup_56400a2e2d310043376a4a1dbd8bfe8e)
+        ;
+
+        
+    
+    
+            circle_marker_bf69f25478baf39abed69daab0b70b7e.bindTooltip(
+                `<div>
+                     赤柯山 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b430b59aae28144920e3b35ad2684dc = L.circleMarker(
+                [23.268528, 121.305469],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_570572665adb37d0b4b478786d3f5288 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_155e775062cf9c8fe02f750c154bfdba = $(`<div id="html_155e775062cf9c8fe02f750c154bfdba" style="width: 100.0%; height: 100.0%;">     <b>東里</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_570572665adb37d0b4b478786d3f5288.setContent(html_155e775062cf9c8fe02f750c154bfdba);
+            
+        
+
+        circle_marker_4b430b59aae28144920e3b35ad2684dc.bindPopup(popup_570572665adb37d0b4b478786d3f5288)
+        ;
+
+        
+    
+    
+            circle_marker_4b430b59aae28144920e3b35ad2684dc.bindTooltip(
+                `<div>
+                     東里 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e075e84cecdc8c202562735447faf318 = L.circleMarker(
+                [23.975222, 121.563889],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_1fac39e7a98893beb92b415f59f1a5a5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3f78287a369764bc9d3988d17392d235 = $(`<div id="html_3f78287a369764bc9d3988d17392d235" style="width: 100.0%; height: 100.0%;">     <b>花蓮農改</b><br>     County: 花蓮縣<br>     Town: 吉安鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_1fac39e7a98893beb92b415f59f1a5a5.setContent(html_3f78287a369764bc9d3988d17392d235);
+            
+        
+
+        circle_marker_e075e84cecdc8c202562735447faf318.bindPopup(popup_1fac39e7a98893beb92b415f59f1a5a5)
+        ;
+
+        
+    
+    
+            circle_marker_e075e84cecdc8c202562735447faf318.bindTooltip(
+                `<div>
+                     花蓮農改 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c59559ced742390bd85c7a3ec04c641a = L.circleMarker(
+                [24.218294, 121.689142],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_7e54a53f69dfae699718bc224921b37b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1aa4337cebf8def28479d611ddb59aa7 = $(`<div id="html_1aa4337cebf8def28479d611ddb59aa7" style="width: 100.0%; height: 100.0%;">     <b>清水斷崖</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 17.0 mm<br>     3-hour rain: 4.0 mm<br>     24-hour rain: 17.0 mm     </div>`)[0];
+                popup_7e54a53f69dfae699718bc224921b37b.setContent(html_1aa4337cebf8def28479d611ddb59aa7);
+            
+        
+
+        circle_marker_c59559ced742390bd85c7a3ec04c641a.bindPopup(popup_7e54a53f69dfae699718bc224921b37b)
+        ;
+
+        
+    
+    
+            circle_marker_c59559ced742390bd85c7a3ec04c641a.bindTooltip(
+                `<div>
+                     清水斷崖 | 1hr: 17.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_056d997f63de07cb706d5392b6a24deb = L.circleMarker(
+                [23.27125, 121.188272],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_d92182083b04f831cb4551ec39b0e20b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4162d2175eb734f5bda7c51abdf07cf5 = $(`<div id="html_4162d2175eb734f5bda7c51abdf07cf5" style="width: 100.0%; height: 100.0%;">     <b>清水林道</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_d92182083b04f831cb4551ec39b0e20b.setContent(html_4162d2175eb734f5bda7c51abdf07cf5);
+            
+        
+
+        circle_marker_056d997f63de07cb706d5392b6a24deb.bindPopup(popup_d92182083b04f831cb4551ec39b0e20b)
+        ;
+
+        
+    
+    
+            circle_marker_056d997f63de07cb706d5392b6a24deb.bindTooltip(
+                `<div>
+                     清水林道 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbeea40c608314005eec1a75bcdaf50d = L.circleMarker(
+                [23.290728, 121.348528],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0fd1892e16b347ee5b186c71c3e8c8ed = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5b90d64c39e20d386dd819339bcd5eb7 = $(`<div id="html_5b90d64c39e20d386dd819339bcd5eb7" style="width: 100.0%; height: 100.0%;">     <b>安通山</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_0fd1892e16b347ee5b186c71c3e8c8ed.setContent(html_5b90d64c39e20d386dd819339bcd5eb7);
+            
+        
+
+        circle_marker_cbeea40c608314005eec1a75bcdaf50d.bindPopup(popup_0fd1892e16b347ee5b186c71c3e8c8ed)
+        ;
+
+        
+    
+    
+            circle_marker_cbeea40c608314005eec1a75bcdaf50d.bindTooltip(
+                `<div>
+                     安通山 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c39b1957a93745222a7bed417801c666 = L.circleMarker(
+                [24.157728, 121.623597],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_26f152a75e99aa1cb92966417349d445 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b5b47fcd5bf40ae1d73904ef5d6e04db = $(`<div id="html_b5b47fcd5bf40ae1d73904ef5d6e04db" style="width: 100.0%; height: 100.0%;">     <b>太魯閣</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 15.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 15.5 mm     </div>`)[0];
+                popup_26f152a75e99aa1cb92966417349d445.setContent(html_b5b47fcd5bf40ae1d73904ef5d6e04db);
+            
+        
+
+        circle_marker_c39b1957a93745222a7bed417801c666.bindPopup(popup_26f152a75e99aa1cb92966417349d445)
+        ;
+
+        
+    
+    
+            circle_marker_c39b1957a93745222a7bed417801c666.bindTooltip(
+                `<div>
+                     太魯閣 | 1hr: 15.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a9f700228dc663b75a963cec0a24b4d = L.circleMarker(
+                [23.171639, 121.249378],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_6548f0bb5df23b153f52aca21b513039 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ff9f532ae2ab261f8934bdb250e9896b = $(`<div id="html_ff9f532ae2ab261f8934bdb250e9896b" style="width: 100.0%; height: 100.0%;">     <b>富里</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_6548f0bb5df23b153f52aca21b513039.setContent(html_ff9f532ae2ab261f8934bdb250e9896b);
+            
+        
+
+        circle_marker_9a9f700228dc663b75a963cec0a24b4d.bindPopup(popup_6548f0bb5df23b153f52aca21b513039)
+        ;
+
+        
+    
+    
+            circle_marker_9a9f700228dc663b75a963cec0a24b4d.bindTooltip(
+                `<div>
+                     富里 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f0e11e98e24c24ad71746183740cd6f = L.circleMarker(
+                [23.691944, 121.549444],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_d350a8730ec021d73cde5dbb16a07952 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_bd2ff663dae6ac4ca9ad76ff3541d4c3 = $(`<div id="html_bd2ff663dae6ac4ca9ad76ff3541d4c3" style="width: 100.0%; height: 100.0%;">     <b>高山部落</b><br>     County: 花蓮縣<br>     Town: 豐濱鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_d350a8730ec021d73cde5dbb16a07952.setContent(html_bd2ff663dae6ac4ca9ad76ff3541d4c3);
+            
+        
+
+        circle_marker_9f0e11e98e24c24ad71746183740cd6f.bindPopup(popup_d350a8730ec021d73cde5dbb16a07952)
+        ;
+
+        
+    
+    
+            circle_marker_9f0e11e98e24c24ad71746183740cd6f.bindTooltip(
+                `<div>
+                     高山部落 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b72ed07c011875f69806de600260224 = L.circleMarker(
+                [23.607222, 121.376111],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_9ca376953754b95fb9beeac8940dd28d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8c77d6f62f9d9df0f2bff8ea3ed6b2b3 = $(`<div id="html_8c77d6f62f9d9df0f2bff8ea3ed6b2b3" style="width: 100.0%; height: 100.0%;">     <b>大豐</b><br>     County: 花蓮縣<br>     Town: 光復鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_9ca376953754b95fb9beeac8940dd28d.setContent(html_8c77d6f62f9d9df0f2bff8ea3ed6b2b3);
+            
+        
+
+        circle_marker_5b72ed07c011875f69806de600260224.bindPopup(popup_9ca376953754b95fb9beeac8940dd28d)
+        ;
+
+        
+    
+    
+            circle_marker_5b72ed07c011875f69806de600260224.bindTooltip(
+                `<div>
+                     大豐 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f25dceb014af32ddb4379c5f89a4482 = L.circleMarker(
+                [23.133056, 121.246667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_b070c1c2dabcfa1c8bb63f779fd05e80 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_90a9ff1585f26e1da530d01ef5f9d65f = $(`<div id="html_90a9ff1585f26e1da530d01ef5f9d65f" style="width: 100.0%; height: 100.0%;">     <b>富南部落</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_b070c1c2dabcfa1c8bb63f779fd05e80.setContent(html_90a9ff1585f26e1da530d01ef5f9d65f);
+            
+        
+
+        circle_marker_6f25dceb014af32ddb4379c5f89a4482.bindPopup(popup_b070c1c2dabcfa1c8bb63f779fd05e80)
+        ;
+
+        
+    
+    
+            circle_marker_6f25dceb014af32ddb4379c5f89a4482.bindTooltip(
+                `<div>
+                     富南部落 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f476d186b27a56d921d052f6ef14692 = L.circleMarker(
+                [24.161555, 121.653037],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_f7c8d4eb105ff11cbb521d1a690b9b91 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_775e4b848fa53b9d56bf60d3fd4bb230 = $(`<div id="html_775e4b848fa53b9d56bf60d3fd4bb230" style="width: 100.0%; height: 100.0%;">     <b>崇德國小</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 3.5 mm<br>     3-hour rain: 0.5 mm<br>     24-hour rain: 3.5 mm     </div>`)[0];
+                popup_f7c8d4eb105ff11cbb521d1a690b9b91.setContent(html_775e4b848fa53b9d56bf60d3fd4bb230);
+            
+        
+
+        circle_marker_4f476d186b27a56d921d052f6ef14692.bindPopup(popup_f7c8d4eb105ff11cbb521d1a690b9b91)
+        ;
+
+        
+    
+    
+            circle_marker_4f476d186b27a56d921d052f6ef14692.bindTooltip(
+                `<div>
+                     崇德國小 | 1hr: 3.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c44c64f5d196b976c624096c640559de = L.circleMarker(
+                [24.236166, 121.708898],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_bb5bf48932f22fe5a24059c9afed6ec0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5018036dc853cb6b06a216cb4a378471 = $(`<div id="html_5018036dc853cb6b06a216cb4a378471" style="width: 100.0%; height: 100.0%;">     <b>和仁車站</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 17.5 mm<br>     3-hour rain: 2.5 mm<br>     24-hour rain: 17.5 mm     </div>`)[0];
+                popup_bb5bf48932f22fe5a24059c9afed6ec0.setContent(html_5018036dc853cb6b06a216cb4a378471);
+            
+        
+
+        circle_marker_c44c64f5d196b976c624096c640559de.bindPopup(popup_bb5bf48932f22fe5a24059c9afed6ec0)
+        ;
+
+        
+    
+    
+            circle_marker_c44c64f5d196b976c624096c640559de.bindTooltip(
+                `<div>
+                     和仁車站 | 1hr: 17.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c006326340ac89d496ea7917c5c362c = L.circleMarker(
+                [23.706388, 121.4125],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_3d3a6bc13519fcb4ad7aa918d335c978 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2ddaedc90d8ac72aa262f28346a27359 = $(`<div id="html_2ddaedc90d8ac72aa262f28346a27359" style="width: 100.0%; height: 100.0%;">     <b>明利國小</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_3d3a6bc13519fcb4ad7aa918d335c978.setContent(html_2ddaedc90d8ac72aa262f28346a27359);
+            
+        
+
+        circle_marker_3c006326340ac89d496ea7917c5c362c.bindPopup(popup_3d3a6bc13519fcb4ad7aa918d335c978)
+        ;
+
+        
+    
+    
+            circle_marker_3c006326340ac89d496ea7917c5c362c.bindTooltip(
+                `<div>
+                     明利國小 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_551a2c2779aa06d00eda3e2382ed6ed2 = L.circleMarker(
+                [23.995322, 121.638331],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_dac0ab64f537fb7484dc5b32cc4a7b22 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_fe2c63f3572955a0a84f57bfe557cab3 = $(`<div id="html_fe2c63f3572955a0a84f57bfe557cab3" style="width: 100.0%; height: 100.0%;">     <b>花蓮漁港</b><br>     County: 花蓮縣<br>     Town: 花蓮市<br>     1-hour rain: 4.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 6.5 mm     </div>`)[0];
+                popup_dac0ab64f537fb7484dc5b32cc4a7b22.setContent(html_fe2c63f3572955a0a84f57bfe557cab3);
+            
+        
+
+        circle_marker_551a2c2779aa06d00eda3e2382ed6ed2.bindPopup(popup_dac0ab64f537fb7484dc5b32cc4a7b22)
+        ;
+
+        
+    
+    
+            circle_marker_551a2c2779aa06d00eda3e2382ed6ed2.bindTooltip(
+                `<div>
+                     花蓮漁港 | 1hr: 4.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a0e5bb9bea41b72e7ba3f4ef464e107 = L.circleMarker(
+                [24.082025, 121.608944],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_d4b36ac011006e4f6a5d77a5db934ddd = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f31e00bb0aa81ef43bc8cefd995f105a = $(`<div id="html_f31e00bb0aa81ef43bc8cefd995f105a" style="width: 100.0%; height: 100.0%;">     <b>加灣</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 1.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_d4b36ac011006e4f6a5d77a5db934ddd.setContent(html_f31e00bb0aa81ef43bc8cefd995f105a);
+            
+        
+
+        circle_marker_9a0e5bb9bea41b72e7ba3f4ef464e107.bindPopup(popup_d4b36ac011006e4f6a5d77a5db934ddd)
+        ;
+
+        
+    
+    
+            circle_marker_9a0e5bb9bea41b72e7ba3f4ef464e107.bindTooltip(
+                `<div>
+                     加灣 | 1hr: 1.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0b327b1c02532c47e4749458fa1a8d7 = L.circleMarker(
+                [23.845606, 121.592664],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_50d1e7cdf5084f949043f6d535bb2118 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_567265b5a5b0486bb822c829c9aeb4a5 = $(`<div id="html_567265b5a5b0486bb822c829c9aeb4a5" style="width: 100.0%; height: 100.0%;">     <b>鹽寮</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_50d1e7cdf5084f949043f6d535bb2118.setContent(html_567265b5a5b0486bb822c829c9aeb4a5);
+            
+        
+
+        circle_marker_a0b327b1c02532c47e4749458fa1a8d7.bindPopup(popup_50d1e7cdf5084f949043f6d535bb2118)
+        ;
+
+        
+    
+    
+            circle_marker_a0b327b1c02532c47e4749458fa1a8d7.bindTooltip(
+                `<div>
+                     鹽寮 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88f542a951f62a32d0efb393b4548c68 = L.circleMarker(
+                [24.302863, 121.731144],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_6e2e6dcab69058f76cdf6755c5e15ff4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_734a3b4355142b0d3ec818c2466d04cc = $(`<div id="html_734a3b4355142b0d3ec818c2466d04cc" style="width: 100.0%; height: 100.0%;">     <b>秀林</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 4.0 mm<br>     3-hour rain: 2.0 mm<br>     24-hour rain: 4.5 mm     </div>`)[0];
+                popup_6e2e6dcab69058f76cdf6755c5e15ff4.setContent(html_734a3b4355142b0d3ec818c2466d04cc);
+            
+        
+
+        circle_marker_88f542a951f62a32d0efb393b4548c68.bindPopup(popup_6e2e6dcab69058f76cdf6755c5e15ff4)
+        ;
+
+        
+    
+    
+            circle_marker_88f542a951f62a32d0efb393b4548c68.bindTooltip(
+                `<div>
+                     秀林 | 1hr: 4.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab09590425c9bc7ead1b951e66bbb69d = L.circleMarker(
+                [24.241394, 121.712472],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_f250e2c94396636c145955b78aa30fc6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0a24530220886ed100ec64bd43aadfec = $(`<div id="html_0a24530220886ed100ec64bd43aadfec" style="width: 100.0%; height: 100.0%;">     <b>和仁</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 19.5 mm<br>     3-hour rain: 4.0 mm<br>     24-hour rain: 19.5 mm     </div>`)[0];
+                popup_f250e2c94396636c145955b78aa30fc6.setContent(html_0a24530220886ed100ec64bd43aadfec);
+            
+        
+
+        circle_marker_ab09590425c9bc7ead1b951e66bbb69d.bindPopup(popup_f250e2c94396636c145955b78aa30fc6)
+        ;
+
+        
+    
+    
+            circle_marker_ab09590425c9bc7ead1b951e66bbb69d.bindTooltip(
+                `<div>
+                     和仁 | 1hr: 19.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf29357b553e9cd2319f8829b1baf4fd = L.circleMarker(
+                [24.183258, 121.641899],
+                {"bubblingMouseEvents": true, "color": "gold", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gold", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_24fe96f3e8e1c33ae4f2b278c3f3147c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0cf36cc276c8c107f00045adbdae17db = $(`<div id="html_0cf36cc276c8c107f00045adbdae17db" style="width: 100.0%; height: 100.0%;">     <b>立霧山</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 10.0 mm<br>     3-hour rain: 2.5 mm<br>     24-hour rain: 10.0 mm     </div>`)[0];
+                popup_24fe96f3e8e1c33ae4f2b278c3f3147c.setContent(html_0cf36cc276c8c107f00045adbdae17db);
+            
+        
+
+        circle_marker_bf29357b553e9cd2319f8829b1baf4fd.bindPopup(popup_24fe96f3e8e1c33ae4f2b278c3f3147c)
+        ;
+
+        
+    
+    
+            circle_marker_bf29357b553e9cd2319f8829b1baf4fd.bindTooltip(
+                `<div>
+                     立霧山 | 1hr: 10.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d81e6b045ed4d01b1adb923adc1daa0 = L.circleMarker(
+                [23.22477, 121.31861],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_53d5004d0677b72f33173558600fd6d5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_377aa53115fd8779c5e46626842887bf = $(`<div id="html_377aa53115fd8779c5e46626842887bf" style="width: 100.0%; height: 100.0%;">     <b>六十石</b><br>     County: 花蓮縣<br>     Town: 富里鄉<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_53d5004d0677b72f33173558600fd6d5.setContent(html_377aa53115fd8779c5e46626842887bf);
+            
+        
+
+        circle_marker_9d81e6b045ed4d01b1adb923adc1daa0.bindPopup(popup_53d5004d0677b72f33173558600fd6d5)
+        ;
+
+        
+    
+    
+            circle_marker_9d81e6b045ed4d01b1adb923adc1daa0.bindTooltip(
+                `<div>
+                     六十石 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_168b9ae9377b3d6e6023f9610759ec61 = L.circleMarker(
+                [23.39885, 121.39168],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_13c1479fe655828143f0d3fcf1b86a60 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5c93437eadc2a2627db7271d2c4420cf = $(`<div id="html_5c93437eadc2a2627db7271d2c4420cf" style="width: 100.0%; height: 100.0%;">     <b>赤科坪</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_13c1479fe655828143f0d3fcf1b86a60.setContent(html_5c93437eadc2a2627db7271d2c4420cf);
+            
+        
+
+        circle_marker_168b9ae9377b3d6e6023f9610759ec61.bindPopup(popup_13c1479fe655828143f0d3fcf1b86a60)
+        ;
+
+        
+    
+    
+            circle_marker_168b9ae9377b3d6e6023f9610759ec61.bindTooltip(
+                `<div>
+                     赤科坪 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58c511da4fd7c3390df7b8255408edfa = L.circleMarker(
+                [23.466421, 121.359867],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_34253b2ded22235b7c3997295ab87d28 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ba8e8ea7d82cbf85b7b9536416298e69 = $(`<div id="html_ba8e8ea7d82cbf85b7b9536416298e69" style="width: 100.0%; height: 100.0%;">     <b>加納納</b><br>     County: 花蓮縣<br>     Town: 瑞穗鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_34253b2ded22235b7c3997295ab87d28.setContent(html_ba8e8ea7d82cbf85b7b9536416298e69);
+            
+        
+
+        circle_marker_58c511da4fd7c3390df7b8255408edfa.bindPopup(popup_34253b2ded22235b7c3997295ab87d28)
+        ;
+
+        
+    
+    
+            circle_marker_58c511da4fd7c3390df7b8255408edfa.bindTooltip(
+                `<div>
+                     加納納 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_802731ef061edf82c8ca6701bc65c3f5 = L.circleMarker(
+                [23.94538, 121.54803],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_cc96435b70163c33d318d3af1df29dd1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2d2d9c7aa2072b33ee9d149f35856218 = $(`<div id="html_2d2d9c7aa2072b33ee9d149f35856218" style="width: 100.0%; height: 100.0%;">     <b>吉安</b><br>     County: 花蓮縣<br>     Town: 吉安鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_cc96435b70163c33d318d3af1df29dd1.setContent(html_2d2d9c7aa2072b33ee9d149f35856218);
+            
+        
+
+        circle_marker_802731ef061edf82c8ca6701bc65c3f5.bindPopup(popup_cc96435b70163c33d318d3af1df29dd1)
+        ;
+
+        
+    
+    
+            circle_marker_802731ef061edf82c8ca6701bc65c3f5.bindTooltip(
+                `<div>
+                     吉安 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf619ac952d9bd89662339c5e43c58bd = L.circleMarker(
+                [23.892778, 121.603889],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_d8f6cba69f5dbffa568db90f74cf6c5b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5a3b97e632bda1bc7079a796c288e779 = $(`<div id="html_5a3b97e632bda1bc7079a796c288e779" style="width: 100.0%; height: 100.0%;">     <b>鹽寮海岸</b><br>     County: 花蓮縣<br>     Town: 壽豐鄉<br>     1-hour rain: 1.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 11.5 mm     </div>`)[0];
+                popup_d8f6cba69f5dbffa568db90f74cf6c5b.setContent(html_5a3b97e632bda1bc7079a796c288e779);
+            
+        
+
+        circle_marker_bf619ac952d9bd89662339c5e43c58bd.bindPopup(popup_d8f6cba69f5dbffa568db90f74cf6c5b)
+        ;
+
+        
+    
+    
+            circle_marker_bf619ac952d9bd89662339c5e43c58bd.bindTooltip(
+                `<div>
+                     鹽寮海岸 | 1hr: 1.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_065432420e7bd95383e9551f4f7eec72 = L.circleMarker(
+                [24.166144, 121.657414],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_8e2574b54c7913e616c4c243ca6f73f7 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_fa66ccda4669640372bcbdd38590bb23 = $(`<div id="html_fa66ccda4669640372bcbdd38590bb23" style="width: 100.0%; height: 100.0%;">     <b>崇德</b><br>     County: 花蓮縣<br>     Town: 秀林鄉<br>     1-hour rain: 3.5 mm<br>     3-hour rain: 0.5 mm<br>     24-hour rain: 3.5 mm     </div>`)[0];
+                popup_8e2574b54c7913e616c4c243ca6f73f7.setContent(html_fa66ccda4669640372bcbdd38590bb23);
+            
+        
+
+        circle_marker_065432420e7bd95383e9551f4f7eec72.bindPopup(popup_8e2574b54c7913e616c4c243ca6f73f7)
+        ;
+
+        
+    
+    
+            circle_marker_065432420e7bd95383e9551f4f7eec72.bindTooltip(
+                `<div>
+                     崇德 | 1hr: 3.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f9707bf3cefc614a3d4a35fd939e3de = L.circleMarker(
+                [23.71794, 121.49438],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_4444870bba39b0f8bc15b1aa091d1168 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b9a084591fa1b3ad655adbd5d2761858 = $(`<div id="html_b9a084591fa1b3ad655adbd5d2761858" style="width: 100.0%; height: 100.0%;">     <b>庄子底</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 1.0 mm     </div>`)[0];
+                popup_4444870bba39b0f8bc15b1aa091d1168.setContent(html_b9a084591fa1b3ad655adbd5d2761858);
+            
+        
+
+        circle_marker_4f9707bf3cefc614a3d4a35fd939e3de.bindPopup(popup_4444870bba39b0f8bc15b1aa091d1168)
+        ;
+
+        
+    
+    
+            circle_marker_4f9707bf3cefc614a3d4a35fd939e3de.bindTooltip(
+                `<div>
+                     庄子底 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5af6db3d4ab0312590f67385d85243d = L.circleMarker(
+                [23.6874, 121.46186],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_ad815e0f4de1b622d99a710790b14deb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_265bbe7b051416d2f99ad5ad40d8e08b = $(`<div id="html_265bbe7b051416d2f99ad5ad40d8e08b" style="width: 100.0%; height: 100.0%;">     <b>長橋</b><br>     County: 花蓮縣<br>     Town: 鳳林鎮<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_ad815e0f4de1b622d99a710790b14deb.setContent(html_265bbe7b051416d2f99ad5ad40d8e08b);
+            
+        
+
+        circle_marker_c5af6db3d4ab0312590f67385d85243d.bindPopup(popup_ad815e0f4de1b622d99a710790b14deb)
+        ;
+
+        
+    
+    
+            circle_marker_c5af6db3d4ab0312590f67385d85243d.bindTooltip(
+                `<div>
+                     長橋 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8809d46d0ad88f5930ed3eda79bc1f9b = L.circleMarker(
+                [23.42554, 121.39358],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0c6338248e0065da8a0e93b55b3fb0d5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e64b393e96548f6c198021a9725e6ac7 = $(`<div id="html_e64b393e96548f6c198021a9725e6ac7" style="width: 100.0%; height: 100.0%;">     <b>麻汝</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_0c6338248e0065da8a0e93b55b3fb0d5.setContent(html_e64b393e96548f6c198021a9725e6ac7);
+            
+        
+
+        circle_marker_8809d46d0ad88f5930ed3eda79bc1f9b.bindPopup(popup_0c6338248e0065da8a0e93b55b3fb0d5)
+        ;
+
+        
+    
+    
+            circle_marker_8809d46d0ad88f5930ed3eda79bc1f9b.bindTooltip(
+                `<div>
+                     麻汝 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e027d7531c4784897e9b60c1539e6d0 = L.circleMarker(
+                [23.38, 121.35968],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_5ff08970e718fa25259e92469bc02740 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1fd7c053a1188344e60c2dbf72394bdb = $(`<div id="html_1fd7c053a1188344e60c2dbf72394bdb" style="width: 100.0%; height: 100.0%;">     <b>達谷寮</b><br>     County: 花蓮縣<br>     Town: 玉里鎮<br>     1-hour rain: 0.5 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.5 mm     </div>`)[0];
+                popup_5ff08970e718fa25259e92469bc02740.setContent(html_1fd7c053a1188344e60c2dbf72394bdb);
+            
+        
+
+        circle_marker_8e027d7531c4784897e9b60c1539e6d0.bindPopup(popup_5ff08970e718fa25259e92469bc02740)
+        ;
+
+        
+    
+    
+            circle_marker_8e027d7531c4784897e9b60c1539e6d0.bindTooltip(
+                `<div>
+                     達谷寮 | 1hr: 0.5 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa8e00b1db4a6d7f20b55279de3cb6c4 = L.circleMarker(
+                [23.29818, 121.26157],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_0896b1f28204e30adc89382ba4719bf2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c845fdad289d36c14a46c59f3b45ab19 = $(`<div id="html_c845fdad289d36c14a46c59f3b45ab19" style="width: 100.0%; height: 100.0%;">     <b>南安</b><br>     County: 花蓮縣<br>     Town: 卓溪鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_0896b1f28204e30adc89382ba4719bf2.setContent(html_c845fdad289d36c14a46c59f3b45ab19);
+            
+        
+
+        circle_marker_aa8e00b1db4a6d7f20b55279de3cb6c4.bindPopup(popup_0896b1f28204e30adc89382ba4719bf2)
+        ;
+
+        
+    
+    
+            circle_marker_aa8e00b1db4a6d7f20b55279de3cb6c4.bindTooltip(
+                `<div>
+                     南安 | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c44a753c1997bc58ec885948414b04b0 = L.circleMarker(
+                [23.6708, 121.38905],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_02c309818016e55cc4c240f399ef1ee9);
+        
+    
+        var popup_aa576f726fc7791bf7a706d6b0f61261 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3f7dd859f955bed20e3e07f57db4d0e1 = $(`<div id="html_3f7dd859f955bed20e3e07f57db4d0e1" style="width: 100.0%; height: 100.0%;">     <b>馬太安(6K)</b><br>     County: 花蓮縣<br>     Town: 萬榮鄉<br>     1-hour rain: 0.0 mm<br>     3-hour rain: 0.0 mm<br>     24-hour rain: 0.0 mm     </div>`)[0];
+                popup_aa576f726fc7791bf7a706d6b0f61261.setContent(html_3f7dd859f955bed20e3e07f57db4d0e1);
+            
+        
+
+        circle_marker_c44a753c1997bc58ec885948414b04b0.bindPopup(popup_aa576f726fc7791bf7a706d6b0f61261)
+        ;
+
+        
+    
+    
+            circle_marker_c44a753c1997bc58ec885948414b04b0.bindTooltip(
+                `<div>
+                     馬太安(6K) | 1hr: 0.0 mm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_02c309818016e55cc4c240f399ef1ee9.addTo(map_d037df3ce5f28abdb3826c8a0e6cb861);
+        
+    
+            var feature_group_e03dbae47e82fac8b3b75a891bb0725d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_1805209a2e1fc0a8c4d771cc851ff1a0 = L.heatLayer(
+                [[23.975128, 121.613275, 1.0], [24.143186, 121.284231, 0.0], [24.192044, 121.388386, 0.0], [24.204558, 121.453956, 0.0], [24.023289, 121.411328, 0.0], [23.769503, 121.498653, 0.0], [23.8119, 121.441458, 0.0], [23.714206, 121.373133, 0.5], [23.666719, 121.370128, 0.5], [23.615233, 121.413331, 0.5], [24.171842, 121.571269, 1.5], [24.179597, 121.495639, 0.0], [23.935639, 121.508944, 0.5], [23.660694, 121.424964, 0.0], [23.394239, 121.356808, 0.0], [23.208717, 121.262342, 0.0], [23.493119, 121.338806, 0.5], [23.443356, 121.327375, 1.0], [23.455167, 121.495028, 0.5], [23.345667, 121.213164, 0.0], [23.3215, 121.339656, 0.0], [23.468114, 121.374069, 0.0], [23.809928, 121.539828, 0.0], [23.991861, 121.537169, 2.5], [23.735269, 121.420131, 0.5], [23.880628, 121.581981, 2.5], [23.682947, 121.5274, 0.5], [23.583897, 121.514806, 0.5], [24.266761, 121.741031, 18.5], [23.587642, 121.378225, 0.0], [23.122139, 121.262389, 0.5], [23.89525, 121.549833, 0.0], [23.295556, 121.266944, 0.0], [23.430078, 121.312632, 0.0], [24.037079, 121.604462, 0.0], [23.819214, 121.432069, 0.0], [23.672706, 121.371893, 1.0], [23.814841, 121.403464, 0.0], [23.202324, 121.25167, 0.0], [23.602442, 121.520492, 0.0], [23.217557, 121.32297, 0.0], [23.684836, 121.482088, 0.0], [23.496927, 121.445929, 0.0], [23.278428, 121.271983, 0.0], [23.405748, 121.320127, 1.0], [24.270832, 121.741801, 17.0], [23.972934, 121.605986, 2.0], [23.740881, 121.42608, 0.0], [23.819722, 121.473333, 0.0], [23.727778, 121.4975, 0.0], [23.635204, 121.530893, 0.0], [23.483056, 121.511389, 0.5], [23.525556, 121.376111, 0.5], [23.345833, 121.303333, 0.0], [23.263333, 121.303056, 0.0], [24.115569, 121.605006, 13.0], [23.870853, 121.508081, 0.0], [23.965694, 121.492842, 0.0], [23.930925, 121.595153, 0.5], [23.746114, 121.453411, 0.0], [23.344331, 121.302853, 0.0], [24.040486, 121.604878, 0.5], [24.147433, 121.629703, 19.0], [23.709219, 121.420106, 0.0], [23.73835, 121.540108, 0.0], [23.631944, 121.397778, 0.0], [23.5239, 121.390211, 1.5], [24.343922, 121.656317, 0.0], [24.307169, 121.770069, 4.5], [23.421147, 121.267631, 0.5], [23.492842, 121.306883, 0.0], [23.474264, 121.410711, 0.5], [23.368928, 121.382931, 0.0], [23.268528, 121.305469, 0.0], [23.975222, 121.563889, 0.0], [24.218294, 121.689142, 17.0], [23.27125, 121.188272, 0.0], [23.290728, 121.348528, 0.5], [24.157728, 121.623597, 15.5], [23.171639, 121.249378, 0.0], [23.691944, 121.549444, 0.0], [23.607222, 121.376111, 0.0], [23.133056, 121.246667, 0.0], [24.161555, 121.653037, 3.5], [24.236166, 121.708898, 17.5], [23.706388, 121.4125, 0.0], [23.995322, 121.638331, 4.5], [24.082025, 121.608944, 1.0], [23.845606, 121.592664, 0.0], [24.302863, 121.731144, 4.0], [24.241394, 121.712472, 19.5], [24.183258, 121.641899, 10.0], [23.22477, 121.31861, 0.5], [23.39885, 121.39168, 0.0], [23.466421, 121.359867, 0.0], [23.94538, 121.54803, 0.0], [23.892778, 121.603889, 1.0], [24.166144, 121.657414, 3.5], [23.71794, 121.49438, 0.0], [23.6874, 121.46186, 0.0], [23.42554, 121.39358, 0.5], [23.38, 121.35968, 0.5], [23.29818, 121.26157, 0.0], [23.6708, 121.38905, 0.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_1805209a2e1fc0a8c4d771cc851ff1a0.addTo(feature_group_e03dbae47e82fac8b3b75a891bb0725d);
+        
+    
+            var layer_control_f4f5c227712d72eb30d1300ceb730495_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b95aea6dac991e73123429b23ca0e973,
+                },
+                overlays :  {
+                    "Rainfall Stations" : feature_group_02c309818016e55cc4c240f399ef1ee9,
+                    "Rainfall Heatmap" : feature_group_e03dbae47e82fac8b3b75a891bb0725d,
+                },
+            };
+            let layer_control_f4f5c227712d72eb30d1300ceb730495 = L.control.layers(
+                layer_control_f4f5c227712d72eb30d1300ceb730495_layers.base_layers,
+                layer_control_f4f5c227712d72eb30d1300ceb730495_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_d037df3ce5f28abdb3826c8a0e6cb861);
+
+        
+    
+            tile_layer_b95aea6dac991e73123429b23ca0e973.addTo(map_d037df3ce5f28abdb3826c8a0e6cb861);
+        
+    
+            feature_group_02c309818016e55cc4c240f399ef1ee9.addTo(map_d037df3ce5f28abdb3826c8a0e6cb861);
+        
+    
+            heat_map_1805209a2e1fc0a8c4d771cc851ff1a0.addTo(feature_group_e03dbae47e82fac8b3b75a891bb0725d);
+        
+</script>
+</html>
